@@ -1,5 +1,6 @@
+
 public class MaxContiguousSubarray {
-    public int maxSubArray(int[] nums) {
+    public static int maxSubArray(int[] nums) {
         if(nums==null) return -1;
         if(nums.length==1){
             return nums[0];
@@ -14,5 +15,8 @@ public class MaxContiguousSubarray {
             maxSum=Math.max(tempSum,maxSum);
         }
         return maxSum;
+    }
+    public static void main(String ...){
+        System.out.println(maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
     }
 }
