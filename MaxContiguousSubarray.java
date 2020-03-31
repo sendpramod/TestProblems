@@ -1,4 +1,4 @@
-class MaxContiguousSubarray {
+public class MaxContiguousSubarray {
     public int maxSubArray(int[] nums) {
         if(nums==null) return -1;
         if(nums.length==1){
